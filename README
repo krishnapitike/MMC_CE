@@ -1,0 +1,13 @@
+Run $python3 metropolis_RP_MEMC2.py
+Energy distribution, short range order parameters as a function of Temperature and Oxygen partial pressure can be computed.
+atat code needs to be precompiled and the cluster expansion model predetermined to run the metropolis monte carlo simulation using this code.
+This repository contains the following files.
+1) metropolis_RP_MEMC2.py -> Metropolis Montecarlo code to compute the short range ordering up to third nearest neighbor. 
+   The energy is obtained by running atat based cluster expansion code. The cluster expansion code requires the following input files.
+2) clusters.out -> input file for cluster expansion code containing the information of clusters
+3) control.in   -> input file for cluster expansion code containing the temperature and number of steps - set to 0 and 0
+4) eci.out      -> input file for cluster expansion code containing the energies of the clusters
+5) gs_str.out   -> input file for cluster expansion code containing the information of clusters
+6) lat.in       -> input file for cluster expansion code containing one unit cell structure and chemical composition
+7) str.out      -> copy of strInit.out
+8) strInit.out  -> input file for cluster expansion code containing super cell structure
